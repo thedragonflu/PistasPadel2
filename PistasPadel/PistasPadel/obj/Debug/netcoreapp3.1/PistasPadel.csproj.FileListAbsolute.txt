@@ -221,3 +221,5 @@ C:\Users\erick\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bi
 C:\Users\erick\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\PistasPadel.csproj.CoreCompileInputs.cache
 C:\Users\erick\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\PistasPadel.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\erick\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\ConfirmarCancelacion.cshtml.g.cs
+C:\Users\erick\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\ConfirmarReserva.cshtml.g.cs
+C:\Users\erick\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\SalirSinReserva.cshtml.g.cs
