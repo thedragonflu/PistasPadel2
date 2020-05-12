@@ -1,15 +1,48 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Inicio Sesión";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    @*Este boton es temporal, cuando se añada la pantalla de inicio de sesiom se podra quitar*@
-    <a class="btn btn-dark" asp-page="ReservasPistas">Ir a reservas</a>
-    <a class="btn btn-dark" asp-page="ConfirmarCancelacion">Ir a confirmar cancelacion de reservas</a>
-    <a class="btn btn-dark" asp-page="ConfirmarReserva">Ir a confirmar reserva</a>
+<h2>Inicio Sesión</h2>
+<br/>
+<div class="border">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="container" style="padding:30px;">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="Cliente.Usuario"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="Cliente.Usuario" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Cliente.Usuario" class="text-danger"></span>
+                </div>
+            </div>
 
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="Cliente.Contraseña"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="Cliente.Contraseña" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Cliente.Contraseña" class="text-danger"></span>
+                </div>
+            </div>
+
+        </div>
+    </form>
 </div>
+           
+
+
+
+                @*Este boton es temporal, cuando se añada la pantalla de inicio de sesiom se podra quitar*@
+                <a class="btn btn-dark" asp-page="ReservasPistas">Ir a reservas</a>
+                <a class="btn btn-dark" asp-page="ConfirmarCancelacion">Ir a confirmar cancelacion de reservas</a>
+
+            </div>
