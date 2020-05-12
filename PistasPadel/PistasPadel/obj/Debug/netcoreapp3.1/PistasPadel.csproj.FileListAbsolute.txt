@@ -108,3 +108,4 @@ C:\Users\steve\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\ob
 C:\Users\steve\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\PistasPadel.dll
 C:\Users\steve\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\PistasPadel.pdb
 C:\Users\steve\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\PistasPadel.genruntimeconfig.cache
+C:\Users\steve\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\ReservasPistas.cshtml.g.cs
