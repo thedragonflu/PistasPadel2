@@ -6071,19 +6071,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\steve\\.nuget\\packages\\": {}
+    "C:\\Users\\erick\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\steve\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj",
+      "projectUniqueName": "C:\\Users\\erick\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj",
       "projectName": "PistasPadel",
-      "projectPath": "C:\\Users\\steve\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj",
-      "packagesPath": "C:\\Users\\steve\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\steve\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\obj\\",
+      "projectPath": "C:\\Users\\erick\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj",
+      "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\erick\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
