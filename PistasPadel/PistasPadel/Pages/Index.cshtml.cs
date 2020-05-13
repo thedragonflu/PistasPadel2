@@ -19,18 +19,33 @@ namespace PistasPadel.Pages
             _logger = logger;
         }
 
-        public IActionResult OnPost()
+      
+        public void OnGet()
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }          
-            return RedirectToPage("ReservasPistasModel");
+          
         }
-
-            public void OnGet()
+        /*cosas mias no borrar
+         *
+         *  private readonly ClienteContext _db;
+        public IndexModel(ClienteContext db)
         {
-
+            _db = db;
         }
+         * 
+         * 
+         * public async Task<IActionResult> OnPost()
+         {
+             if(!ModelState.IsValid)
+             {
+                 return Page();
+             }
+             else
+             {
+
+             }
+             _db.Add(Cliente);
+             await _db.SaveChangesAsync();
+             return RedirectToPage("listalista/IndiceLista");
+         }*/
     }
 }

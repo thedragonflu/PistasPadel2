@@ -15,5 +15,7 @@ namespace PistasPadel.Models
 
         [Required(ErrorMessage = "*Introduce una contraseña")]
         public String Contraseña { get; set; }
+
+        
     }
 }
