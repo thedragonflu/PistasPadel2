@@ -19,7 +19,16 @@ namespace PistasPadel.Pages
             _logger = logger;
         }
 
-        public void OnGet()
+        public IActionResult OnPost()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }          
+            return RedirectToPage("ReservasPistasModel");
+        }
+
+            public void OnGet()
         {
 
         }
