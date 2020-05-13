@@ -17,7 +17,17 @@ namespace PistasPadel.Pages
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
-        }      
+        }
+
+        public IActionResult OnPost()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }          
+            return RedirectToPage("ReservasPistasModel");
+        }
+
             public void OnGet()
         {
 

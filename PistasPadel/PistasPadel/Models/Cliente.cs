@@ -9,8 +9,10 @@ namespace PistasPadel.Models
     public class Cliente
     {
         public int ID { get; set; }
+
         [Required(ErrorMessage ="*Introduce un usuario")]
         public String Usuario { get; set; }
+
         [Required(ErrorMessage = "*Introduce una contraseña")]
         public String Contraseña { get; set; }
     }
