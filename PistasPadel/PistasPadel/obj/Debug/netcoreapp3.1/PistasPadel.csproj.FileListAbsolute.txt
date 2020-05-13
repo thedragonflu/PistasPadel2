@@ -333,3 +333,6 @@ C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPad
 C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\PistasPadel.dll
 C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\PistasPadel.pdb
 C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\PistasPadel.genruntimeconfig.cache
+C:\Users\steve\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\ConfirmarCancelacion.cshtml.g.cs
+C:\Users\steve\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\ConfirmarReserva.cshtml.g.cs
+C:\Users\steve\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\SalirSinReserva.cshtml.g.cs
