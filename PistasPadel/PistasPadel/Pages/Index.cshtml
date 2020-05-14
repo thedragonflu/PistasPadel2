@@ -37,14 +37,19 @@
             </div>
 
             <div class="form-group">
-                <div class="row">                    
+                <div class="row">
+                    <div class="col-sm-4">
                         @*Este boton es temporal, cuando se añada la pantalla de inicio de sesiom se podra quitar*@
-                        <a class="btn btn-dark btn-success form-control" asp-page="ReservasPistas">Ir a reservas</a>
+                        <a asp-page="ReservasPistas" class="btn btn-dark form-control">Ir a reservas</a>
+                    </div>
+                    <div class="col-sm-4">
                         <a class="btn btn-dark" asp-page="ConfirmarCancelacion">Ir a confirmar cancelacion de reservas</a>
-                        <a class="btn btn-dark" asp-page="ConfirmarReserva">Ir a confirmar reserva</a>
+                    </div> 
+                    <div class="col-sm-4">
+                            <a class="btn btn-dark" asp-page="ConfirmarReserva">Ir a confirmar reserva</a>
+                    </div>                
                 </div>
             </div>
-
         </div>
     </form>
 </div>
