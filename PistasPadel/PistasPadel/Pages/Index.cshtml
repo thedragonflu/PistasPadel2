@@ -30,22 +30,27 @@
                     <div class="col-sm-4">
                         <input asp-for="Cliente.Contraseña" class="form-control" />
                     </div>
-                    <span asp-validation-for="Cliente.Contraseña" class="text-danger">Errorrrr</span>
                 </div>
             </div>
 
+            <div>
+                <div class="col-sm-4">
+                    <input type="submit" value="Inicio" class="btn btn-success form-control"/>
+                </div>
+            </div>
+            <br />
             <div class="form-group">
                 <div class="row">
                     <div class="col-sm-4">
                         @*Este boton es temporal, cuando se añada la pantalla de inicio de sesiom se podra quitar*@
-                        <a asp-page="ReservasPistas" class="btn btn-dark form-control">Ir a reservas</a>
+                        <a class="btn btn-dark form-control col-sm-12" asp-page="ReservasPistas">Reservas</a>
                     </div>
                     <div class="col-sm-4">
-                        <a class="btn btn-dark" asp-page="ConfirmarCancelacion">Ir a confirmar cancelacion de reservas</a>
-                    </div> 
+                        <a class="btn btn-dark col-sm-12" asp-page="ConfirmarCancelacion">Cancelar reservas</a>
+                    </div>
                     <div class="col-sm-4">
-                            <a class="btn btn-dark" asp-page="ConfirmarReserva">Ir a confirmar reserva</a>
-                    </div>                
+                        <a class="btn btn-dark col-sm-12" asp-page="ConfirmarReserva">Confirmar reserva</a>
+                    </div>
                 </div>
             </div>
         </div>

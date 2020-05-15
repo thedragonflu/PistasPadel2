@@ -39,15 +39,15 @@ namespace PistasPadel.Pages
         }
 
         //si se añade el metodo onPost() es para añadir los datos a la base de datos        
-         /* public async Task<IActionResult> OnPost()
-         {
-             if(!ModelState.IsValid)
-             {
-                 return Page();
-             }     
-             _db.Add(Cliente);
-             await _db.SaveChangesAsync();
-             return RedirectToPage("ReservasPistas");
-         }*/
+        public async Task<IActionResult> OnPost()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+            //_db.Add(Cliente);
+            //await _db.SaveChangesAsync();
+            return RedirectToPage("ReservasPistas");
+        }
     }
 }
