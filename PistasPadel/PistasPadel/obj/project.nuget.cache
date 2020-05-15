@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vGEr3rjIyRBpI1kwSPKWzqA4VBGskRcEsLZB7RgyTJM1J057FPvjapXOp7mFJacu37zrEWEHU5SE8gdbz/Kc3w==",
+  "dgSpecHash": "kCjoAAxYwKrt2+neew+bC0zRzqks2yXp7DaXk1T0tTWo/Fb5NYqxqMTvmNQsWYI3vhURdplcEv/wdjNQ4H3iPQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\erick\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj",
+  "projectFilePath": "C:\\Users\\erick\\source\\repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\erick\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\PistasPadel",
-    "\\PistasPadel\\PistasPadel"
+    "\\PistasPadel\\PistasPadel",
+    "\\PistasPadel\\PistasPadel\\Pages"
   ],
-  "SelectedNode": "\\PistasPadel\\PistasPadel.sln",
+  "SelectedNode": "\\PistasPadel\\PistasPadel\\Pages\\ReservasPistas.cshtml",
   "PreviewInSolutionExplorer": false
 }
