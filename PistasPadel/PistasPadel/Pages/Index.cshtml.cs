@@ -13,8 +13,8 @@ namespace PistasPadel.Pages
     public class IndexModel : PageModel
     {
         //Si pongo esto da error 
-       /* //inicializamos el contexto de la base de datos
-        private readonly ApplicationDbContext _db;
+       //inicializamos el contexto de la base de datos
+        /*private readonly ApplicationDbContext _db;
         //constructor
         public IndexModel(ApplicationDbContext db)
         {
