@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\curso18-19\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj": {}
+    "C:\\Users\\steve\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\curso18-19\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj": {
+    "C:\\Users\\steve\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\curso18-19\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj",
+        "projectUniqueName": "C:\\Users\\steve\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj",
         "projectName": "PistasPadel",
-        "projectPath": "C:\\Users\\curso18-19\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj",
-        "packagesPath": "C:\\Users\\curso18-19\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\curso18-19\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\obj\\",
+        "projectPath": "C:\\Users\\steve\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj",
+        "packagesPath": "C:\\Users\\steve\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\steve\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\curso18-19\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,10 +38,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.4.4, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.4, )"
