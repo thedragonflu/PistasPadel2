@@ -329,9 +329,6 @@ C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPad
 C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\PistasPadel.dll
 C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\PistasPadel.pdb
 C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\PistasPadel.genruntimeconfig.cache
-C:\Users\steve\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\ConfirmarCancelacion.cshtml.g.cs
-C:\Users\steve\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\ConfirmarReserva.cshtml.g.cs
-C:\Users\steve\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\SalirSinReserva.cshtml.g.cs
 C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
@@ -432,3 +429,4 @@ C:\Users\erick\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bi
 C:\Users\erick\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\erick\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\erick\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\steve\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
