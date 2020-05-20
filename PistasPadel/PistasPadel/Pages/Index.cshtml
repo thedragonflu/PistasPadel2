@@ -4,51 +4,57 @@
     ViewData["Title"] = "Inicio Sesión";
 }
 
-<h2>Inicio Sesión</h2>
-<br/>
-<div class="border">
-    <form method="post">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="container" style="padding:30px;">
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-sm-2">
-                        <label asp-for="Cliente.Usuario"></label>
-                    </div>
-                    <div class="col-sm-4">
-                        <input asp-for="Cliente.Usuario" class="form-control" />
-                    </div>
-                    <span asp-validation-for="Cliente.Usuario" class="text-danger"></span>
-                </div>              
-            </div>
+<link rel="stylesheet" type="text/css" href="~/css/index.css">
 
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-sm-2">
-                        <label asp-for="Cliente.Contraseña"></label>
-                    </div>
-                    <div class="col-sm-4">
-                        <input asp-for="Cliente.Contraseña" class="form-control" />
-                    </div>
-                    <span asp-validation-for="Cliente.Contraseña" class="text-danger"></span>
-                </div>
-            </div>
-
-            <div>
-                <div class="col-sm-4">
-                    <input type="submit" value="Inicio" class="btn btn-success form-control"/>
-                </div>
-            </div>
-            <br />
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-sm-4">
-                        @*Este boton es temporal, cuando se añada la pantalla de inicio de sesiom se podra quitar*@
-                        <a class="btn btn-dark form-control col-sm-12" asp-page="ReservasPistas">Reservas</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
+<div class="text-center">
+    <img src="~/image/padel.png" id="logo" />
 </div>
-          
+<div id="divPadre">
+    <div class="text-light text-center" id="divHijo">
+        <br />
+        <h3 class="text-light">Inicio Sesión</h3>
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="container" style="padding:30px;">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <label asp-for="Cliente.Usuario"></label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input asp-for="Cliente.Usuario" class="form-control" id="usuario"/>
+                        </div>
+                        <span asp-validation-for="Cliente.Usuario" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <label asp-for="Cliente.Contraseña"></label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input asp-for="Cliente.Contraseña" class="form-control" id="contrasena"/>
+                        </div>
+                        <span asp-validation-for="Cliente.Contraseña" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="col-sm-4">
+                        <input type="submit" value="Inicio" class="btn btn-success form-control" />
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            @*Este boton es temporal, cuando se añada la pantalla de inicio de sesiom se podra quitar*@
+                            <a class="btn btn-dark form-control col-sm-12" asp-page="ReservasPistas">Reservas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
