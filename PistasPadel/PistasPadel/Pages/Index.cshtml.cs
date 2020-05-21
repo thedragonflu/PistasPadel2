@@ -13,12 +13,12 @@ namespace PistasPadel.Pages
     public class IndexModel : PageModel
     {
         //Si pongo esto da error 
-       /* //inicializamos el contexto de la base de datos
-        private readonly ApplicationDbContext _db;
+        //inicializamos el contexto de la base de datos
+       /* private readonly ApplicationDbContext _db;
         //constructor
         public IndexModel(ApplicationDbContext db)
         {
-            _db = db;
+           _db = db;
         }*/
 
         //Vincula los datos del cliente con este modelo
@@ -45,8 +45,8 @@ namespace PistasPadel.Pages
             {
                 return Page();
             }
-            //_db.Add(Cliente);
-            //await _db.SaveChangesAsync();
+           // _db.Add(Cliente);
+          //  await _db.SaveChangesAsync();
             return RedirectToPage("ReservasPistas");
         }
     }
