@@ -1,8 +1,4 @@
-﻿body {
-    background-color: red;
-}
-
-#divPadre {
+﻿#divPadre {
     display: flex;
     justify-content: center;
     align-items: center
@@ -15,14 +11,6 @@
 }
 
 #usuario, #contrasena {
-    border: none;
-    border-bottom: 2px solid white;
-    background-color: #1F48CF;
-    outline: none;
-}
-
-#fecha {
-    color: white;
     border: none;
     border-bottom: 2px solid white;
     background-color: #1F48CF;
