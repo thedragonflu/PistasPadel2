@@ -4,8 +4,6 @@
     ViewData["Title"] = "ReservasPistas";
 }
 
-<link rel="stylesheet" type="text/css" href="~/css/reservas.css">
-
 <div class="container row" id="titulo">
     <div class="col-6">
         <h2 class="text-info">Reservas Pistas</h2>
@@ -48,14 +46,13 @@
             <td>@i:00</td>
             <td id="@i-h">Libre</td>
             <td>
-                <a class="btn btn-success btn-sm" style="color:white" id="@i-btn1" onclick="reserva(this, '@i-h', '@i-btn2')">Reservar</a>
-                <a class="btn btn-danger btn-sm invisible" style="color:white" id="@i-btn2" onclick="cancelarReserva(this, '@i-h', '@i-btn1')">Cancelar</a>
+                <a class="btn btn-success btn-sm" id="@i-btn1" onclick="reserva(this, '@i-h', '@i-btn2')">Reservar</a>
+                <a class="btn btn-danger btn-sm invisible" id="@i-btn2" onclick="cancelarReserva(this, '@i-h', '@i-btn1')">Cancelar</a>
             </td>
         </tr>
         }
     </table>
 </div>
-
 
 <script>
 
@@ -169,20 +166,16 @@
     function reserva(elmnt, id, idbtn) {
         hacerVisible();
         $(document).ready(function () {
-            $("#btnAceptar1").click(function (i) {
-                let element = document.getElementById(id);
+            $("#btnAceptar1").click(function () {
+                var element = document.getElementById(id);
                 element.style.background = "purple";
                 element.style.color = "white";
                 element.innerHTML = "Reservado";
-                element.style.borderRadius = "0px 50px 50px 0px";
-
-                element.previousElementSibling.style.background = "purple";
-                element.previousElementSibling.style.color = "white";
-                element.previousElementSibling.style.borderRadius = "50px 0px 0px 50px";
+                element.style.borderRadius = "50px 50px 50px 50px";
 
                 elmnt.className = "btn btn-success btn-sm invisible";
 
-                let element2 = document.getElementById(idbtn);
+                var element2 = document.getElementById(idbtn);
                 element2.className = "btn btn-danger btn-sm";
 
                 hacerInvisible();
@@ -194,21 +187,17 @@
     function cancelarReserva(elmnt, id, idbtn) {
         visibleCancelar();
         $(document).ready(function () {
-            $("#btnAceptar3").click(function (i) {
-                let element = document.getElementById(id);
+            $("#btnAceptar3").click(function () {
+                var element = document.getElementById(id);
                 element.style.background = "white";
                 element.style.color = "black";
                 element.innerHTML = "Libre";
-                element.style.borderRadius = "50px 0px 0px 50px";
+                element.style.borderRadius = "0px 0px 0px 0px";
 
-                element.previousElementSibling.style.background = "white";
-                element.previousElementSibling.style.color = "black";
-                element.previousElementSibling.style.borderRadius = "0px 50px 50px 0px";
+                elmnt.className = "btn btn-danger btn-sm invisible";
 
-                elmnt.className = "btn btn-success btn-sm invisible";
-
-                let element2 = document.getElementById(idbtn);
-                element2.className = "btn btn-success btn-sm visible";
+                var element2 = document.getElementById(idbtn);
+                element2.className = "btn btn-success btn-sm";
 
                 hacerInvisible();
             });
