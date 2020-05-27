@@ -4,169 +4,262 @@
     ViewData["Title"] = "ReservasPistas";
 }
 
-<div class="container row" id="titulo">
-    <div class="col-6">
-        <h2 class="text-info">Reservas Pistas</h2>
-    </div>
-    <br />
-</div>
-<br />
-<div class="4" id="fechaPadre">
-    <input type="date" id="fecha" />
-</div>
-<br />
-<div class="row text-center" id="cuadroTexto">
-    <div class="alert alert-info text-center invisible" style="width: 100%" id="alerta">
-        <p id="mensaje"></p>
-        <a class="btn btn-success" id="btnAceptar1">Aceptar</a>
-        <a class="btn btn-success invisible" id="btnAceptar2" onclick="hacerInvisible()">Aceptar</a>
-        <a class="btn btn-success invisible" id="btnAceptar3">Aceptar</a>
-        <a class="btn btn-danger invisible" id="btnCancelar3" onclick="hacerInvisible()">Cancelar</a>
-        <a class="btn btn-danger invisible" id="btnCancelar2" onclick="hacerVisible()">Cancelar</a>
-        <a class="btn btn-danger" id="btnCancelar1" onclick="cambiarSalirSinReservar()">Cancelar</a>
-    </div>
-</div>
-<br />
-<div id="horas" style="padding: 4px;
+    <body>
+        <div class="container row" id="titulo">
+            <div class="col-6">
+                <h2 class="text-info">Reservas Pistas</h2>
+            </div>
+            <br />
+        </div>
+        <br />
+        <div class="4" id="fechaPadre">
+            <input type="date" id="fecha" />
+        </div>
+        <br />
+        <div class="row text-center" id="cuadroTexto">
+            <div class="alert alert-info text-center invisible" style="width: 100%" id="alerta">
+                <p id="mensaje"></p>
+                <a class="btn btn-success" id="btnAceptar1">Aceptar</a>
+                <a class="btn btn-success invisible" id="btnAceptar2" onclick="hacerInvisible()">Aceptar</a>
+                <a class="btn btn-success invisible" id="btnAceptar3">Aceptar</a>
+                <a class="btn btn-danger invisible" id="btnCancelar3" onclick="hacerInvisible()">Cancelar</a>
+                <a class="btn btn-danger invisible" id="btnCancelar2" onclick="hacerVisible()">Cancelar</a>
+                <a class="btn btn-danger" id="btnCancelar1" onclick="cambiarSalirSinReservar()">Cancelar</a>
+            </div>
+        </div>
+        <br />
+        <div id="horas" style="padding: 4px;
             width: 100%;
             height: 550px;
             overflow: auto;">
 
-    @*Bucle que crea el la tabla con el horario de 9:00 a 21:00*@
-    <table class="table table-striped border">
-        <tr id="nombres" class="table-secondary">
-            <th>Hora</th>
-            <th>Estado</th>
-            <th>Reservas</th>
-        </tr>
+            @*Bucle que crea el la tabla con el horario de 9:00 a 21:00*@
+            <table class="table table-striped border">
+                <tr id="nombres" class="table-secondary">
+                    <th>Hora</th>
+                    <th>Estado</th>
+                    <th>Reservas</th>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td id="lbl1">Libre</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" id="btn1-1" onclick="reserva('btn1-1', 'lbl1', 'btn2-1')">Reservar</a>
+                        <a class="btn btn-danger btn-sm invisible" id="btn2-1" onclick="cancelarReserva('btn2-1', 'lbl1', 'btn1-1')">Cancelar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td id="lbl2">Libre</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" id="btn1-2" onclick="reserva('btn1-2', 'lbl2', 'btn2-2')">Reservar</a>
+                        <a class="btn btn-danger btn-sm invisible" id="btn2-2" onclick="cancelarReserva('btn2-2', 'lbl2', 'btn1-2')">Cancelar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td id="lbl3">Libre</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" id="btn1-3" onclick="reserva('btn1-3', 'lbl3', 'btn2-3')">Reservar</a>
+                        <a class="btn btn-danger btn-sm invisible" id="btn2-3" onclick="cancelarReserva('btn2-3', 'lbl3', 'btn1-3')">Cancelar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td id="lbl4">Libre</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" id="btn1-4" onclick="reserva('btn1-4', 'lbl4', 'btn2-4')">Reservar</a>
+                        <a class="btn btn-danger btn-sm invisible" id="btn2-4" onclick="cancelarReserva('btn2-4', 'lbl4', 'btn1-4')">Cancelar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td id="lbl5">Libre</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" id="btn1-5" onclick="reserva('btn1-5', 'lbl5', 'btn2-5')">Reservar</a>
+                        <a class="btn btn-danger btn-sm invisible" id="btn2-5" onclick="cancelarReserva('btn2-5', 'lbl5', 'btn1-5')">Cancelar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td id="lbl6">Libre</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" id="btn1-6" onclick="reserva('btn1-6', 'lbl6', 'btn2-6')">Reservar</a>
+                        <a class="btn btn-danger btn-sm invisible" id="btn2-6" onclick="cancelarReserva('btn2-6', 'lbl6', 'btn1-6')">Cancelar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td id="lbl7">Libre</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" id="btn1-7" onclick="reserva('btn1-7', 'lbl7', 'btn2-7')">Reservar</a>
+                        <a class="btn btn-danger btn-sm invisible" id="btn2-7" onclick="cancelarReserva('btn2-7', 'lbl7', 'btn1-7')">Cancelar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td id="lbl8">Libre</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" id="btn1-8" onclick="reserva('btn1-8', 'lbl8', 'btn2-8')">Reservar</a>
+                        <a class="btn btn-danger btn-sm invisible" id="btn2-8" onclick="cancelarReserva('btn2-8', 'lbl8', 'btn1-8')">Cancelar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td id="lbl9">Libre</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" id="btn1-9" onclick="reserva('btn1-9', 'lbl9', 'btn2-9')">Reservar</a>
+                        <a class="btn btn-danger btn-sm invisible" id="btn2-9" onclick="cancelarReserva('btn2-9', 'lbl9', 'btn1-9')">Cancelar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td id="lbl10">Libre</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" id="btn1-10" onclick="reserva('btn1-10', 'lbl10', 'btn2-10')">Reservar</a>
+                        <a class="btn btn-danger btn-sm invisible" id="btn2-10" onclick="cancelarReserva('btn2-10', 'lbl10', 'btn1-10')">Cancelar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td id="lbl11">Libre</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" id="btn1-11" onclick="reserva('btn1-11', 'lbl11', 'btn2-11')">Reservar</a>
+                        <a class="btn btn-danger btn-sm invisible" id="btn2-11" onclick="cancelarReserva('btn2-11', 'lbl11', 'btn1-11')">Cancelar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td id="lbl12">Libre</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" id="btn1-12" onclick="reserva('btn1-12', 'lbl12', 'btn2-12')">Reservar</a>
+                        <a class="btn btn-danger btn-sm invisible" id="btn2-12" onclick="cancelarReserva('btn2-12', 'lbl12', 'btn1-12')">Cancelar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td id="lbl13">Libre</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" id="btn1-13" onclick="reserva('btn1-13', 'lbl13', 'btn2-13')">Reservar</a>
+                        <a class="btn btn-danger btn-sm invisible" id="btn2-13" onclick="cancelarReserva('btn2-13', 'lbl13', 'btn1-13')">Cancelar</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-        @for (var i = 9; i <= 21; i++)
-        {
-        <tr id="horasHijo">
-            <td>@i:00</td>
-            <td id="@i-h">Libre</td>
-            <td>
-                <a class="btn btn-success btn-sm" id="@i-btn1" onclick="reserva(this, '@i-h', '@i-btn2')">Reservar</a>
-                <a class="btn btn-danger btn-sm invisible" id="@i-btn2" onclick="cancelarReserva(this, '@i-h', '@i-btn1')">Cancelar</a>
-            </td>
-        </tr>
-        }
-    </table>
-</div>
+        <script>
 
-<script>
+            // Formato de la fecha actual
+            var fecha = document.querySelector('input[type="date"]');
 
-    // Formato de la fecha actual
-    var fecha = document.querySelector('input[type="date"]');
+            function formatoFecha() {
+                let date = new Date();
+                let year = date.getFullYear().toString();
+                let day = date.getDate().toString();
+                let month = date.getMonth() + 1;
+                if (month < 9) {
+                    return year + "-0" + month.toString() + "-" + day;
+                } else {
+                    return year + "-" + month + "-" + day;
+                }
 
-    function formatoFecha() {
-        let date = new Date();
-        let year = date.getFullYear().toString();
-        let day = date.getDate().toString();
-        let month = date.getMonth() + 1;
-        if (month < 9) {
-            return year + "-0" + month.toString() + "-" + day;
-        } else {
-            return year + "-" + month + "-" + day;
-        }
+            }
+            fecha.value = formatoFecha();
 
-    }
-    fecha.value = formatoFecha();
+            // Hacer visible la alerta
+            function hacerVisible() {
+                let element = document.getElementById("alerta");
+                element.className = "alert alert-info text-center visible";
 
-    // Hacer visible la alerta
-    function hacerVisible() {
-        let element = document.getElementById("alerta");
-        element.className = "alert alert-info text-center visible";
+                let msg = document.getElementById("mensaje");
+                msg.innerHTML = "¿Quiere reservar una pista de pádel a esta hora?";
 
-        let msg = document.getElementById("mensaje");
-        msg.innerHTML = "¿Quiere reservar una pista de pádel a esta hora?";
+                let btn1 = document.getElementById("btnAceptar1");
+                btn1.className = "btn btn-success";
 
-        let btn1 = document.getElementById("btnAceptar1");
-        btn1.className = "btn btn-success";
+                let btn2 = document.getElementById("btnCancelar1");
+                btn2.className = "btn btn-danger";
 
-        let btn2 = document.getElementById("btnCancelar1");
-        btn2.className = "btn btn-danger";
+                let btn3 = document.getElementById("btnAceptar2");
+                btn3.className = "btn btn-success invisible";
 
-        let btn3 = document.getElementById("btnAceptar2");
-        btn3.className = "btn btn-success invisible";
+                let btn4 = document.getElementById("btnCancelar2");
+                btn4.className = "btn btn-danger invisible";
+            }
 
-        let btn4 = document.getElementById("btnCancelar2");
-        btn4.className = "btn btn-danger invisible";
-    }
+            // Hacer invisible la alerta
+            function hacerInvisible() {
+                let elmnt = document.getElementById("alerta");
+                elmnt.className = "alert alert-info text-center invisible";
 
-    // Hacer invisible la alerta
-    function hacerInvisible() {
-        let elmnt = document.getElementById("alerta");
-        elmnt.className = "alert alert-info text-center invisible";
+                let btn1 = document.getElementById("btnAceptar2");
+                btn1.className = "btn btn-success invisible";
 
-        let btn1 = document.getElementById("btnAceptar2");
-        btn1.className = "btn btn-success invisible";
+                let btn2 = document.getElementById("btnCancelar2");
+                btn2.className = "btn btn-danger invisible";
 
-        let btn2 = document.getElementById("btnCancelar2");
-        btn2.className = "btn btn-danger invisible";
+                let btn3 = document.getElementById("btnAceptar3");
+                btn3.className = "btn btn-success invisible";
 
-        let btn3 = document.getElementById("btnAceptar3");
-        btn3.className = "btn btn-success invisible";
+                let btn4 = document.getElementById("btnCancelar3");
+                btn4.className = "btn btn-danger invisible";
 
-        let btn4 = document.getElementById("btnCancelar3");
-        btn4.className = "btn btn-danger invisible";
+                let btn5 = document.getElementById("btnAceptar1");
+                btn5.className = "btn btn-success";
 
-        let btn5 = document.getElementById("btnAceptar1");
-        btn5.className = "btn btn-success";
+                let btn6 = document.getElementById("btnCancelar1");
+                btn6.className = "btn btn-danger";
+            }
 
-        let btn6 = document.getElementById("btnCancelar1");
-        btn6.className = "btn btn-danger";
-    }
+            // Hacer visible la alerta de salir sin reservar
+            function cambiarSalirSinReservar() {
+                let msg = document.getElementById("mensaje");
+                msg.innerHTML = "¿Está seguro de que quiere salir sin hacer la reserva?"
 
-    // Hacer visible la alerta de salir sin reservar
-    function cambiarSalirSinReservar() {
-        let msg = document.getElementById("mensaje");
-        msg.innerHTML = "¿Está seguro de que quiere salir sin hacer la reserva?"
+                let btn1 = document.getElementById("btnAceptar2");
+                btn1.className = "btn btn-success";
 
-        let btn1 = document.getElementById("btnAceptar2");
-        btn1.className = "btn btn-success";
+                let btn2 = document.getElementById("btnCancelar2");
+                btn2.className = "btn btn-danger";
 
-        let btn2 = document.getElementById("btnCancelar2");
-        btn2.className = "btn btn-danger";
+                let btn3 = document.getElementById("btnAceptar1");
+                btn3.className = "btn btn-success invisible";
 
-        let btn3 = document.getElementById("btnAceptar1");
-        btn3.className = "btn btn-success invisible";
+                let btn4 = document.getElementById("btnCancelar1");
+                btn4.className = "btn btn-danger invisible";
+            }
 
-        let btn4 = document.getElementById("btnCancelar1");
-        btn4.className = "btn btn-danger invisible";
-    }
+            // Hacer visible la alerta de cancelar reserva
+            function visibleCancelar() {
+                hacerVisible();
 
-    // Hacer visible la alerta de cancelar reserva
-    function visibleCancelar() {
-        hacerVisible();
+                let msg = document.getElementById("mensaje");
+                msg.innerHTML = "¿Está seguro de que quiere cancelar su reserva?"
 
-        let msg = document.getElementById("mensaje");
-        msg.innerHTML = "¿Está seguro de que quiere cancelar su reserva?"
+                let btn1 = document.getElementById("btnAceptar3");
+                btn1.className = "btn btn-success";
 
-        let btn1 = document.getElementById("btnAceptar3");
-        btn1.className = "btn btn-success";
+                let btn2 = document.getElementById("btnCancelar3");
+                btn2.className = "btn btn-danger";
 
-        let btn2 = document.getElementById("btnCancelar3");
-        btn2.className = "btn btn-danger";
+                let btn3 = document.getElementById("btnAceptar2");
+                btn3.className = "btn btn-success invisible";
 
-        let btn3 = document.getElementById("btnAceptar2");
-        btn3.className = "btn btn-success invisible";
+                let btn4 = document.getElementById("btnCancelar2");
+                btn4.className = "btn btn-danger invisible";
 
-        let btn4 = document.getElementById("btnCancelar2");
-        btn4.className = "btn btn-danger invisible";
+                let btn5 = document.getElementById("btnAceptar1");
+                btn5.className = "btn btn-success invisible";
 
-        let btn5 = document.getElementById("btnAceptar1");
-        btn5.className = "btn btn-success invisible";
+                let btn6 = document.getElementById("btnCancelar1");
+                btn6.className = "btn btn-danger invisible";
+            }
 
-        let btn6 = document.getElementById("btnCancelar1");
-        btn6.className = "btn btn-danger invisible";
-    }
+            // Cambio de estilo de Libre a Reservado
+            /*document.getElementById("btnAceptar1").addEventListener("click", reserva);
+            function reserva() {
+                hacerVisible();
 
-    // Cambio de estilo de Libre a Reservado
-    function reserva(elmnt, id, idbtn) {
-        hacerVisible();
-        $(document).ready(function () {
-            $("#btnAceptar1").click(function () {
                 var element = document.getElementById(id);
                 element.style.background = "purple";
                 element.style.color = "white";
@@ -179,16 +272,13 @@
                 element2.className = "btn btn-danger btn-sm";
 
                 hacerInvisible();
-            });
-        });
-    }
+            }
 
-    // Cambio de estilo de reservado a libre
-    function cancelarReserva(elmnt, id, idbtn) {
-        visibleCancelar();
-        $(document).ready(function () {
-            $("#btnAceptar3").click(function () {
+            document.getElementById("btnAceptar3").addEventListener("click", cancelarReserva)
+            function cancelarReserva(elmnt, id, idbtn) {
+                visibleCancelar();
                 var element = document.getElementById(id);
+                document.get
                 element.style.background = "white";
                 element.style.color = "black";
                 element.innerHTML = "Libre";
@@ -200,7 +290,46 @@
                 element2.className = "btn btn-success btn-sm";
 
                 hacerInvisible();
-            });
-        });
-    }
-</script>
+            }*/
+            function reserva(elmnt, id, idbtn) {
+                hacerVisible();
+                $(document).ready(function () {
+                    $("#btnAceptar1").click(function () {
+                        var element = document.getElementById(id);
+                        element.style.background = "purple";
+                        element.style.color = "white";
+                        element.innerHTML = "Reservado";
+                        element.style.borderRadius = "50px 50px 50px 50px";
+
+                        elmnt.className = "btn btn-success btn-sm invisible";
+
+                        var element2 = document.getElementById(idbtn);
+                        element2.className = "btn btn-danger btn-sm";
+
+                        hacerInvisible();
+                    });
+                });
+            }
+
+            // Cambio de estilo de reservado a libre
+            function cancelarReserva(elmnt, id, idbtn) {
+                visibleCancelar();
+                $(document).ready(function () {
+                    $("#btnAceptar3").click(function () {
+                        var element = document.getElementById(id);
+                        element.style.background = "white";
+                        element.style.color = "black";
+                        element.innerHTML = "Libre";
+                        element.style.borderRadius = "0px 0px 0px 0px";
+
+                        elmnt.className = "btn btn-danger btn-sm invisible";
+
+                        var element2 = document.getElementById(idbtn);
+                        element2.className = "btn btn-success btn-sm";
+
+                        hacerInvisible();
+                    });
+                });
+            }
+        </script>
+    </body>
