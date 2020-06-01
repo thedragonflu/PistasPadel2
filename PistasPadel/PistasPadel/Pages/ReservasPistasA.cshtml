@@ -23,7 +23,7 @@
 <div class="row text-center" id="cuadroTexto">
     <div class="alert alert-info text-center invisible" style="width: 100%" id="alerta">
         <p id="mensaje"></p>
-        <a class="btn btn-success" id="btnAceptar1" onclick="hacerInvisible()">Aceptar</a>
+        <a class="btn btn-success" id="btnAceptar1">Aceptar</a>
         <a class="btn btn-success invisible" id="btnAceptar2" onclick="hacerInvisible()">Aceptar</a>
         <a class="btn btn-success invisible" id="btnAceptar3">Aceptar</a>
         <a class="btn btn-danger invisible" id="btnCancelar3" onclick="hacerInvisible()">Cancelar</a>
@@ -223,11 +223,11 @@
         element.style.background = "white";
         element.style.color = "black";
         element.innerHTML = "Libre";
-        element.style.borderRadius = "50px 0px 0px 50px";
+        element.style.borderRadius = "0px 0px 0px 0px";
 
         element.previousElementSibling.style.background = "white";
         element.previousElementSibling.style.color = "black";
-        element.previousElementSibling.style.borderRadius = "0px 50px 50px 0px";
+        element.previousElementSibling.style.borderRadius = "0px 0px 0px 0px";
 
         elmnt.className = "btn btn-success btn-sm invisible";
 
