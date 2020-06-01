@@ -13,5 +13,11 @@ namespace PistasPadel.Pages
         {
 
         }
+
+        public void OnPost()
+        {
+            
+        }
     }
 }
+

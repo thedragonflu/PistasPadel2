@@ -1,21 +1,26 @@
 ﻿@page
-@model PistasPadel.Pages.ReservasPistasModel
+@model PistasPadel.Pages.ReservasPistasBModel
 @{
-    ViewData["Title"] = "ReservasPistas";
+    ViewData["Title"] = "ReservasPistasB";
 }
 
-<div class="container row">
+<h1>Reservas Pistas B</h1>
+
+<div class="container row" id="titulo">
     <div class="col-6">
         <h2 class="text-info">Reservas Pistas</h2>
     </div>
     <br />
 </div>
 <br />
-<div class="4">
-    <input type="date" id="fecha" />
+<div class="4" id="fechaPadre">
+    <input id="fecha" type="date"
+           min="0-0-0"
+           max="0-0-0" />
+    <input id="button" type="button" onclick="buscarHoras()" value="Buscar Horas" />
 </div>
 <br />
-<div class="row text-center">
+<div class="row text-center" id="cuadroTexto">
     <div class="alert alert-info text-center invisible" style="width: 100%" id="alerta">
         <p id="mensaje"></p>
         <a class="btn btn-success" id="btnAceptar1">Aceptar</a>
@@ -26,14 +31,15 @@
         <a class="btn btn-danger" id="btnCancelar1" onclick="cambiarSalirSinReservar()">Cancelar</a>
     </div>
 </div>
-<div style="padding: 4px;
+<br />
+<div id="horas" style="padding: 4px;
             width: 100%;
             height: 550px;
             overflow: auto;">
 
     @*Bucle que crea el la tabla con el horario de 9:00 a 21:00*@
     <table class="table table-striped border">
-        <tr class="table-secondary">
+        <tr id="nombres" class="table-secondary">
             <th>Hora</th>
             <th>Estado</th>
             <th>Reservas</th>
@@ -41,14 +47,14 @@
 
         @for (var i = 9; i <= 21; i++)
         {
-        <tr>
-            <td>@i:00</td>
-            <td id="@i-h">Libre</td>
-            <td>
-                <a class="btn btn-success btn-sm" style="color:white" id="@i-btn1" onclick="reserva(this, '@i-h', '@i-btn2')">Reservar</a>
-                <a class="btn btn-danger btn-sm invisible" style="color:white" id="@i-btn2" onclick="cancelarReserva(this, '@i-h', '@i-btn1')">Cancelar</a>
-            </td>
-        </tr>
+            <tr id="horasHijo">
+                <td>@i:00</td>
+                <td id="@i-h">Libre</td>
+                <td>
+                    <a class="btn btn-success btn-sm" style="color:white" id="@i-btn1" onclick="reserva(this, '@i-h', '@i-btn2')">Reservar</a>
+                    <a class="btn btn-danger btn-sm invisible" style="color:white" id="@i-btn2" onclick="cancelarReserva(this, '@i-h', '@i-btn1')">Cancelar</a>
+                </td>
+            </tr>
         }
     </table>
 </div>
@@ -57,21 +63,49 @@
 <script>
 
     // Formato de la fecha actual
-    var fecha = document.querySelector('input[type="date"]');
 
-    function formatoFecha() {
+    function fechaActual() {
         let date = new Date();
         let year = date.getFullYear().toString();
-        let day = date.getDate().toString();
+        let day = date.getDate();
         let month = date.getMonth() + 1;
         if (month < 9) {
-            return year + "-0" + month.toString() + "-" + day;
+            if (day < 9) {
+                return year.toString() + "-0" + month.toString() + "-0" + day;
+            } else {
+                return year.toString() + "-0" + month.toString() + "-" + day;
+            }
         } else {
-            return year + "-" + month + "-" + day;
+            if (day < 9) {
+                return year.toString() + "-" + month.toString() + "-0" + day;
+            } else {
+                return year.toString() + "-" + month.toString() + "-" + day;
+            }
         }
-
     }
-    fecha.value = formatoFecha();
+    document.getElementById("fecha").value = fechaLimite();
+
+    function fechaLimite() {
+        var date = new Date();
+        var day = date.getDate() + 1;
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear().toString();
+        if (month < 9) {
+            if (day < 9) {
+                return year.toString() + "-0" + month.toString() + "-0" + day;
+            } else {
+                return year.toString() + "-0" + month.toString() + "-" + day;
+            }
+        } else {
+            if (day < 9) {
+                return year.toString() + "-" + month.toString() + "-0" + day;
+            } else {
+                return year.toString() + "-" + month.toString() + "-" + day;
+            }
+        }
+    }
+    document.getElementById("fecha").setAttribute("max", fechaLimite());
+    document.getElementById("fecha").setAttribute("min", fechaActual());
 
     // Hacer visible la alerta
     function hacerVisible() {
@@ -165,50 +199,59 @@
     // Cambio de estilo de Libre a Reservado
     function reserva(elmnt, id, idbtn) {
         hacerVisible();
-        $(document).ready(function () {
-            $("#btnAceptar1").click(function (i) {
-                let element = document.getElementById(id);
-                element.style.background = "purple";
-                element.style.color = "white";
-                element.innerHTML = "Reservado";
-                element.style.borderRadius = "0px 50px 50px 0px";
+        let element = document.getElementById(id);
+        element.style.background = "purple";
+        element.style.color = "white";
+        element.innerHTML = "Reservado";
+        element.style.borderRadius = "0px 50px 50px 0px";
 
-                element.previousElementSibling.style.background = "purple";
-                element.previousElementSibling.style.color = "white";
-                element.previousElementSibling.style.borderRadius = "50px 0px 0px 50px";
+        element.previousElementSibling.style.background = "purple";
+        element.previousElementSibling.style.color = "white";
+        element.previousElementSibling.style.borderRadius = "50px 0px 0px 50px";
 
-                elmnt.className = "btn btn-success btn-sm invisible";
+        elmnt.className = "btn btn-success btn-sm invisible";
 
-                let element2 = document.getElementById(idbtn);
-                element2.className = "btn btn-danger btn-sm";
+        let element2 = document.getElementById(idbtn);
+        element2.className = "btn btn-danger btn-sm";
 
-                hacerInvisible();
-            });
-        });
+        hacerInvisible();
     }
 
     // Cambio de estilo de reservado a libre
     function cancelarReserva(elmnt, id, idbtn) {
         visibleCancelar();
-        $(document).ready(function () {
-            $("#btnAceptar3").click(function (i) {
-                let element = document.getElementById(id);
-                element.style.background = "white";
-                element.style.color = "black";
-                element.innerHTML = "Libre";
-                element.style.borderRadius = "50px 0px 0px 50px";
+        let element = document.getElementById(id);
+        element.style.background = "white";
+        element.style.color = "black";
+        element.innerHTML = "Libre";
+        element.style.borderRadius = "50px 0px 0px 50px";
 
-                element.previousElementSibling.style.background = "white";
-                element.previousElementSibling.style.color = "black";
-                element.previousElementSibling.style.borderRadius = "0px 50px 50px 0px";
+        element.previousElementSibling.style.background = "white";
+        element.previousElementSibling.style.color = "black";
+        element.previousElementSibling.style.borderRadius = "0px 50px 50px 0px";
 
-                elmnt.className = "btn btn-success btn-sm invisible";
+        elmnt.className = "btn btn-success btn-sm invisible";
 
-                let element2 = document.getElementById(idbtn);
-                element2.className = "btn btn-success btn-sm visible";
+        let element2 = document.getElementById(idbtn);
+        element2.className = "btn btn-success btn-sm visible";
 
-                hacerInvisible();
-            });
-        });
+        hacerInvisible();
     }
+
+    function buscarHoras() {
+        let valor = document.getElementById("fecha").value;
+        let msValor = Date.parse(valor);
+        let fechaValor = new Date(msValor);
+
+        let ms1 = Date.parse(fechaActual());
+        let fecha1 = new Date(ms1);
+
+        if (fechaValor.getTime() == fecha1.getTime()) {
+            location.href = "/ReservasPistasA";
+        } else {
+            location.href = "/ReservasPistasB";
+        }
+    }
+
+    document.getElementById("button").addEventListener("click", buscarHoras);
 </script>

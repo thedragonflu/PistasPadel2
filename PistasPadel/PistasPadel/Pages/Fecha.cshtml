@@ -1,0 +1,64 @@
+﻿@page
+@model PistasPadel.Pages.FechaModel
+@{
+    ViewData["Title"] = "Fecha";
+}
+
+<h1>Fecha</h1>
+
+<div class="4" id="fechaPadre">
+    <input id="fecha" type="date"/>
+    <input id="button" type="button" onclick="buscarHoras()"/>
+    <p id="mensaje">Sin hora</p>
+</div>
+
+<script>
+
+    // Formato de la fecha actual
+
+    function fechaActual() {
+        let date = new Date();
+        let year = date.getFullYear().toString();
+        let day = date.getDate().toString();
+        let month = date.getMonth() + 1;
+        if (month < 9) {
+            return year + "-0" + month.toString() + "-" + day;
+        } else {
+            return year + "-" + month + "-" + day;
+        }
+    }
+    document.getElementById("fecha").value = fechaActual();
+
+    function fechaLimite() {
+        var date = new Date();
+        var day = date.getDate() + 1;
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear().toString();
+        if (month < 9) {
+            return year + "-0" + month.toString() + "-" + day;
+        } else {
+            return year + "-" + month + "-" + day;
+        }
+    }
+    document.getElementById("fecha").setAttribute("max", fechaLimite());
+    document.getElementById("fecha").setAttribute("min", fechaActual());
+
+    function buscarHoras() {
+        $(document).ready(function () {
+            $("#button").click(function () {
+                let valor = document.getElementById("fecha").value;
+                let msValor = Date.parse(valor);
+                let fechaValor = new Date(msValor);
+
+                let ms1 = Date.parse(fechaActual());
+                let fecha1 = new Date(ms1);
+
+                if (fechaValor.getTime() == fecha1.getTime()) {
+                    document.getElementById("mensaje").innerHTML = "Fecha actual"
+                } else {
+                    document.getElementById("mensaje").innerHTML = "Fecha de mañana"
+                }
+            });
+        });
+    }
+</script>
