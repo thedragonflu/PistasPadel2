@@ -14,6 +14,6 @@ namespace PistasPadel.Models
         {
         }
 
-        //public DbSet<Cliente> Cliente { get; set; }
+        public Microsoft.EntityFrameworkCore.DbSet<Cliente> Cliente { get; set; }
     }
 }
