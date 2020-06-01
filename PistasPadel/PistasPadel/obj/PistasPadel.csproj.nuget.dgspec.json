@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\erick\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj": {}
+    "C:\\Users\\erick\\source\\repos\\PistasPadel2Pruebas\\PistasPadel\\PistasPadel\\PistasPadel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\erick\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj": {
+    "C:\\Users\\erick\\source\\repos\\PistasPadel2Pruebas\\PistasPadel\\PistasPadel\\PistasPadel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\erick\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj",
+        "projectUniqueName": "C:\\Users\\erick\\source\\repos\\PistasPadel2Pruebas\\PistasPadel\\PistasPadel\\PistasPadel.csproj",
         "projectName": "PistasPadel",
-        "projectPath": "C:\\Users\\erick\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\PistasPadel.csproj",
+        "projectPath": "C:\\Users\\erick\\source\\repos\\PistasPadel2Pruebas\\PistasPadel\\PistasPadel\\PistasPadel.csproj",
         "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\erick\\Source\\Repos\\thedragonflu\\PistasPadel2\\PistasPadel\\PistasPadel\\obj\\",
+        "outputPath": "C:\\Users\\erick\\source\\repos\\PistasPadel2Pruebas\\PistasPadel\\PistasPadel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -61,7 +61,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.1.2, )"
+              "version": "[3.1.3, )"
             },
             "dbup-add-migration": {
               "target": "Package",
@@ -78,6 +78,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -86,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
