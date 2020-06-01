@@ -315,7 +315,6 @@ C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPad
 C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
 C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
-C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\ReservasPistas.cshtml.g.cs
 C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
@@ -436,3 +435,12 @@ C:\Users\erick\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bi
 C:\Users\erick\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
 C:\Users\erick\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\erick\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\Fecha.cshtml.g.cs
+C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\ReservasPistasA.cshtml.g.cs
+C:\Users\curso18-19\Source\Repos\thedragonflu\PistasPadel2\PistasPadel\PistasPadel\obj\Debug\netcoreapp3.1\Razor\Pages\ReservasPistasB.cshtml.g.cs

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using PistasPadel.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -25,14 +24,11 @@ namespace PistasPadel.Pages
             _logger = logger;
             _db = db;
         }
-
         public IEnumerable<Cliente> Clientes { get; set; }
-
         public async Task OnGet()
         {
             Clientes = await _db.Cliente.ToListAsync();
         }
-
         public async Task<IActionResult> OnPost(String nombreUsuario, String contraseñaUsuario)
         {
             try
