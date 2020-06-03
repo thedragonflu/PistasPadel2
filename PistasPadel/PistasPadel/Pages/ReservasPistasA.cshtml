@@ -58,8 +58,13 @@
         }
     </table>
 </div>
-
-
+<br />
+<br />
+<center>
+    <div class="col-sm-2">
+        <a asp-page="Index" style="background-color:brown" class="btn btn-success form-control">Cerrar sesión</a>
+    </div>
+</center>
 <script>
 
     // Formato de la fecha actual
@@ -73,7 +78,7 @@
                 return year.toString() + "-0" + month.toString() + "-0" + day;
             } else {
                 return year.toString() + "-0" + month.toString() + "-" + day;
-            } 
+            }
         } else {
             if (day < 9) {
                 return year.toString() + "-" + month.toString() + "-0" + day;
